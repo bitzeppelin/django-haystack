@@ -151,4 +151,4 @@ def handle_registrations(*args, **kwargs):
     search_sites_conf = importlib.import_module(settings.HAYSTACK_SITECONF)
 
 
-handle_registrations()
+#handle_registrations()
