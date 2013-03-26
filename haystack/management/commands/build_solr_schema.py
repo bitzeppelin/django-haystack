@@ -2,6 +2,10 @@ from optparse import make_option
 import sys
 from django.core.management.base import BaseCommand
 from django.template import loader, Context
+
+import haystack
+haystack.handle_registrations()
+
 from haystack.constants import ID, DJANGO_CT, DJANGO_ID, DEFAULT_OPERATOR
 
 

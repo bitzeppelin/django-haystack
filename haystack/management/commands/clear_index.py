@@ -1,6 +1,10 @@
 from optparse import make_option
 import sys
 from django.core.management.base import BaseCommand
+
+import haystack
+haystack.handle_registrations()
+
 from haystack.management.commands.update_index import get_site
 
 

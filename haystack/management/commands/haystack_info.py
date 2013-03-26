@@ -6,6 +6,9 @@ class Command(NoArgsCommand):
     
     def handle_noargs(self, **options):
         """Provides feedback about the current Haystack setup."""
+        import haystack
+        haystack.handle_registrations()
+
         # Cause the default site to load.
         from haystack import site
         

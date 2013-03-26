@@ -7,6 +7,10 @@ from django.core.exceptions import ImproperlyConfigured
 from django.core.management.base import AppCommand
 from django.db import reset_queries
 from django.utils.encoding import smart_str
+
+import haystack
+haystack.handle_registrations()
+
 from haystack.query import SearchQuerySet
 try:
     from django.utils import importlib
